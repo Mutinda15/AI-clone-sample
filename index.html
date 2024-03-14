@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Streaming OpenAI API Completions in JavaScript</title>
+  <script type="module" src="stream-response.js"></script>
+</head>
+<body class="bg-light text-dark d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+  <div class="container shadow p-4 mb-5 bg-body rounded" style="max-width: 600px;">
+    <h1 class="text-center mb-4">Streaming OpenAI API Completions in JavaScript</h1>
+    <div id="resultContainer" class="my-4 p-3 bg-light border" style="height: 200px; overflow-y: auto;">
+      <p class="text-secondary mb-2">Generated Text</p>
+      <p id="resultText" class=""></p>
+    </div>
+    <input type="text" id="promptInput" class="form-control my-3" placeholder="Enter prompt...">
+    <div class="d-flex justify-content-center">
+      <button id="generateBtn" class="btn btn-primary mx-2">Generate</button>
+      <button id="stopBtn" disabled class="btn btn-outline-secondary mx-2">Stop</button>
+    </div>
+  </div>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
